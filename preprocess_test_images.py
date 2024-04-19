@@ -60,7 +60,7 @@ for part_number in part_numbers:
          img = cv2.imread(input_file_path)
 
          #Gray scale image
-         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+         #img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
          # Show to user.
          if show_image:
