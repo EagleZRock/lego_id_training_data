@@ -8,7 +8,7 @@ import random
 dry_run = False # If true, will print output directory.
 
 input_path = '/Users/ayush/Documents/Github/lego_id_training_data/data/'
-output_path = '/Users/ayush/Documents/Github/lego_id_training_data/output/'
+output_path = '/Users/ayush/Documents/Github/lego_id_training_data/output_grayscale/'
 show_image = False
 
 train_test_split = 0.3
@@ -60,7 +60,8 @@ for part_number in part_numbers:
          img = cv2.imread(input_file_path)
 
          #Gray scale image
-         #img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+         print(img.shape)
 
          # Show to user.
          if show_image:
