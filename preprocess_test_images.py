@@ -2,6 +2,7 @@ import os
 import glob
 import cv2
 import random
+import numpy as np
 
 # Parameters 
 
@@ -16,15 +17,15 @@ shuffle_split = False
 
 part_numbers = [
                   '2456',
-                  '3001',
-                  '3002',
-                  '3003',
-                  '3004',
-                  '3010',
-                  '3039',
-                  '3660',
-                  '3701',
-                  '32064'
+                  #'3001',
+                  #'3002',
+                  #'3003',
+                  #'3004',
+                  #'3010',
+                  #'3039',
+                  #'3660',
+                  #'3701',
+                  #'32064'
                ]
 
 for part_number in part_numbers:
@@ -61,7 +62,8 @@ for part_number in part_numbers:
 
          #Gray scale image
          img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-         print(img.shape)
+         #print(np.shape(img))
+         #print(img)
 
          # Show to user.
          if show_image:
