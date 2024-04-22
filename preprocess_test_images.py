@@ -75,7 +75,7 @@ for part_number in part_numbers:
          test_or_train = 'train'        
          if index < int(num_files * 0.1): 
                test_or_train = 'test'
-         elif index < int(num_files * 0.4): 
+         elif index < int(num_files * 0.3): 
                test_or_train = 'val'
          
          # Prepare the output folder.
