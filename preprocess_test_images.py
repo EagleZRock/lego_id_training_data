@@ -17,15 +17,15 @@ shuffle_split = False
 
 part_numbers = [
                   '2456',
-                  #'3001',
-                  #'3002',
-                  #'3003',
-                  #'3004',
-                  #'3010',
-                  #'3039',
-                  #'3660',
-                  #'3701',
-                  #'32064'
+                  '3001',
+                  '3002',
+                  '3003',
+                  '3004',
+                  '3010',
+                  '3039',
+                  '3660',
+                  '3701',
+                  '32064'
                ]
 
 for part_number in part_numbers:
@@ -38,7 +38,7 @@ for part_number in part_numbers:
 
     # Image index.
     index = 0
-
+    
     # If true, the images will be loaded and then split at random.
     if shuffle_split:
         file_index = random.sample(range(1, num_files), num_files- 1)
